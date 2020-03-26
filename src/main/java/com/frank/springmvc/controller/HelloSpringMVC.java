@@ -22,6 +22,11 @@ public class HelloSpringMVC {
     public String HelloWorld2(Model model){
     	 System.out.println("HelloWorld1111111111");
          model.addAttribute("message","Hello World!!!HelloWorld1111111111");
+		 if(model!=null){
+			   System.out.println("HelloWorld55555  not  null");
+		 }else{
+			   System.out.println("HelloWorld55555  is  null");
+		 }
          return "hello";
     }
 
