@@ -28,4 +28,19 @@ public class HelloSpringMVC {
    	 System.out.println("HelloWorld666666666");
      System.out.println("HelloWorld666666666");
    } 
+    
+    @RequestMapping("/hellomasterdaily")
+    public String hellomasterdaily(Model model){
+        model.addAttribute("message","Hello World!!!hellomasterdaily");  
+        System.out.println(" in both master branch and daily ");
+        return "hello2";  
+    }  
+    
+    @RequestMapping("/hello2master")
+    public String hello2master(Model model){
+        model.addAttribute("message","Hello World!!!hello2master");  
+        System.out.println(" in branch hello2master ");
+        return "hello2";  
+    }  
+    
 }
