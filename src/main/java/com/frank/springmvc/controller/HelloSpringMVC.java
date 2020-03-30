@@ -39,4 +39,11 @@ public class HelloSpringMVC {
         model.addAttribute("message","Hello World!!!HelloWorld55555");
         return "hello";
    } 
+    
+    @RequestMapping("/hello5local1110")
+    public String hellolocal(Model model){
+        System.out.println("hello5local1110");
+        model.addAttribute("message","Hello World!!!hello5local1110");
+        return "hello";
+   } 
 }
