@@ -28,13 +28,13 @@ public class HelloSpringMVC {
 		System.out.println("HelloWorld666666666");
 	}
 
-	@RequestMapping("/hello5")
-	public String HelloWorld5(Model model) {
-		System.out.println("HelloWorld55555");
-		System.out.println("HelloWorld55555");
-		model.addAttribute("message", "Hello World!!!HelloWorld55555");
-		return "hello";
-	}
+    @RequestMapping("/hello5")
+    public String HelloWorld5(Model model){
+   	    System.out.println("HelloWorld55555");
+        System.out.println("HelloWorld55555");
+        model.addAttribute("message","Hello World!!!HelloWorld55555");
+        return "hello";
+   }
 
 	@RequestMapping("/hellomasterdaily")
 	public String hellomasterdaily(Model model) {
